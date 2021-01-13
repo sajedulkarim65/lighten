@@ -1,6 +1,7 @@
-//
+// Import Components
 import Nav from "../../components/nav";
 import Footer from "../../components/footer";
+import Button from "../../components/button";
 
 function Contact() {
   return (
@@ -53,9 +54,8 @@ function Contact() {
                   <div class="col-md-12">
                     <textarea class="textarea" placeholder="Message"></textarea>
                   </div>
-                  <div class=" col-md-12">
-                    <button class="send">Send</button>
-                  </div>
+                  {/* Button */}
+                  <Button btnText="Send" />
                 </div>
               </form>
             </div>

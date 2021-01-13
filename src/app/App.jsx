@@ -1,4 +1,4 @@
-// Third Party modules
+// Third Party Modules
 import Helmet from "react-helmet";
 
 // Import Router

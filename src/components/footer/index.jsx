@@ -102,7 +102,7 @@ function Footer() {
       <div class="copyright">
         <p>
           Copyright 2019 All Right Reserved By
-          <a href="https://html.design/">Free html Templates</a>
+          <a href="https://html.design/"> Free html Templates</a>
         </p>
       </div>
     </div>

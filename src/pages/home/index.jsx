@@ -1,3 +1,4 @@
+// Import Components
 import Nav from "../../components/nav";
 import Footer from "../../components/footer";
 
@@ -28,43 +29,7 @@ function Home() {
                   </h1>
                   <p>
                     It is a long established fact that a r eader will be
-                    distracted by the readable content of a page{" "}
-                  </p>
-                  <a href="#">see more Products</a>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                class="second-slide"
-                src={BannerImg}
-                alt="Second slide"
-              ></img>
-              <div class="container">
-                <div class="carousel-caption relative">
-                  <h1>
-                    Our <strong class="black_bold">Latest </strong>
-                    <strong class="yellow_bold">Product </strong>
-                  </h1>
-                  <p>
-                    It is a long established fact that a r eader will be
-                    distracted by the readable content of a page{" "}
-                  </p>
-                  <a href="#">see more Products</a>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="third-slide" src={BannerImg} alt="Third slide"></img>
-              <div class="container">
-                <div class="carousel-caption relative">
-                  <h1>
-                    Our<strong class="black_bold">Latest </strong>
-                    <strong class="yellow_bold">Product </strong>
-                  </h1>
-                  <p>
-                    It is a long established fact that a r eader will be
-                    distracted by the readable content of a page{" "}
+                    distracted by the readable content of a page
                   </p>
                   <a href="#">see more Products</a>
                 </div>
@@ -89,7 +54,9 @@ function Home() {
           </a>
         </div>
       </section>
+      
       {/* Footer Part */}
+      
       <Footer />
     </div>
   );

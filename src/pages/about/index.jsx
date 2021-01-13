@@ -1,6 +1,9 @@
-//
+// Import Components
 import Nav from "../../components/nav";
 import Footer from "../../components/footer";
+import Button from "../../components/button";
+import ServiceCard from "../../components/service";
+import ChooseItem from "../../components/choose";
 
 // Import Asset
 import lightenImg from "../../assets/images/pc_layout.png";
@@ -85,57 +88,29 @@ function About() {
         <div class="container">
           <div class="white_bg">
             <div class="row">
-              <dir class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                <div class="for_box">
-                  <i>
-                    <img src={icon1} />
-                  </i>
-                  <h3>Data recovery</h3>
-                  <p>
-                    Perspiciatis eos quos totam cum minima autPerspiciatis eos
-                    quos
-                  </p>
-                </div>
-              </dir>
-              <dir class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                <div class="for_box">
-                  <i>
-                    <img src={icon2} />
-                  </i>
-                  <h3>Computer repair</h3>
-                  <p>
-                    Perspiciatis eos quos totam cum minima autPerspiciatis eos
-                    quos
-                  </p>
-                </div>
-              </dir>
-              <dir class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                <div class="for_box">
-                  <i>
-                    <img src={icon3} />
-                  </i>
-                  <h3>Mobile service</h3>
-                  <p>
-                    Perspiciatis eos quos totam cum minima autPerspiciatis eos
-                    quos
-                  </p>
-                </div>
-              </dir>
-              <dir class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                <div class="for_box">
-                  <i>
-                    <img src={icon4} />
-                  </i>
-                  <h3>Network solutions</h3>
-                  <p>
-                    Perspiciatis eos quos totam cum minima autPerspiciatis eos
-                    quos
-                  </p>
-                </div>
-              </dir>
-              <div class="col-md-12">
-                <a class="read-more">Read More</a>
-              </div>
+              {/* first Item */}
+              <ChooseItem
+                icons={icon1}
+                heading="Data recovery (1)"
+                description="Perspiciatis eos quos totam cum minima autPerspiciatis eos quos (1)"
+              />
+              <ChooseItem
+                icons={icon2}
+                heading="Data recovery (2)"
+                description="Perspiciatis eos quos totam cum minima autPerspiciatis eos quos (2)"
+              />
+              <ChooseItem
+                icons={icon3}
+                heading="Data recovery (3)"
+                description="Perspiciatis eos quos totam cum minima autPerspiciatis eos quos (3)"
+              />
+              <ChooseItem
+                icons={icon4}
+                heading="Data recovery (4)"
+                description="Perspiciatis eos quos totam cum minima autPerspiciatis eos quos (4)"
+              />
+              {/* Button */}
+              <Button btnText="Read More" />
             </div>
           </div>
         </div>
@@ -156,78 +131,36 @@ function About() {
             </div>
           </div>
           <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-              <div class="service-box">
-                <i>
-                  <img src={serviceIcon1} />
-                </i>
-                <h3>Fast service</h3>
-                <p>
-                  Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
-                  ea{" "}
-                </p>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-              <div class="service-box">
-                <i>
-                  <img src={serviceIcon2} />
-                </i>
-                <h3>Secure payments</h3>
-                <p>
-                  Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
-                  ea{" "}
-                </p>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-              <div class="service-box">
-                <i>
-                  <img src={serviceIcon3} />
-                </i>
-                <h3>Expert team</h3>
-                <p>
-                  Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
-                  ea{" "}
-                </p>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-              <div class="service-box">
-                <i>
-                  <img src={serviceIcon4} />
-                </i>
-                <h3>Affordable services</h3>
-                <p>
-                  Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
-                  ea{" "}
-                </p>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-              <div class="service-box">
-                <i>
-                  <img src={serviceIcon5} />
-                </i>
-                <h3>90 Days warranty</h3>
-                <p>
-                  Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
-                  ea{" "}
-                </p>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-              <div class="service-box">
-                <i>
-                  <img src={serviceIcon6} />
-                </i>
-                <h3>Award winning</h3>
-                <p>
-                  Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
-                  ea{" "}
-                </p>
-              </div>
-            </div>
+            <ServiceCard
+              images={serviceIcon1}
+              description="(1) Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex"
+              heading="Second Service"
+            />
+            <ServiceCard
+              images={serviceIcon2}
+              description="(2) Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex"
+              heading="Third Service"
+            />
+            <ServiceCard
+              images={serviceIcon3}
+              description="(3) Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex"
+              heading="First Service"
+            />
+            <ServiceCard
+              images={serviceIcon4}
+              description="(4) Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex"
+              heading="Sixth Service"
+            />
+            <ServiceCard
+              images={serviceIcon5}
+              description="(5) Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex"
+              heading="Fourth Secvice"
+            />
+            <ServiceCard
+              images={serviceIcon6}
+              description="(6) Exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex"
+              heading="Fifth Service"
+            />
           </div>
         </div>
       </div>
